@@ -1,30 +1,42 @@
+// portfolioData.js
+import { events } from './events';
+
 export const portfolioData = {
     personalInfo: {
-        name: 'John Doe',
-        bio: 'Software Engineer with over 10 years of experience...',
-        links: {
-            projects: 'http://example.com/projects',
-            socialMedia: 'http://example.com/socialMedia',
-            clients: 'http://example.com/clients',
+        name: 'Roberto Peña',
+        role: 'Digital Marketing Specialist',
+        roleDescription: 'I like dabbling in various parts of digital marketing and like to learn about new technologies, write technical articles or simply play games in my free time.',
+        SocialMedia: {
+            github: {
+                link: 'https://github.com/yourusername',
+                icon: './assets/social_media_icons/github.png'
+            },
+            linkedin: {
+                link: 'https://linkedin.com/in/yourusername',
+                icon: './assets/social_media_icons/linkedin.png'
+            },
+            twitter: {
+                link: 'https://twitter.com/yourusername',
+                icon: './assets/social_media_icons/twitter.png'
+            },
+            facebook: {
+                link: 'https://facebook.com/yourusername',
+                icon: './assets/social_media_icons/facebook.png'
+            },
+            instagram: {
+                link: 'https://instagram.com/yourusername',
+                icon: './assets/social_media_icons/instagram.png'
+            },
+            whatsapp: {
+                link: 'https://wa.me/yournumber',
+                icon: './assets/social_media_icons/whatsapp.png'
+            },
+            youtube: {
+                link: 'https://youtube.com/yourusername',
+                icon: './assets/social_media_icons/youtube.png'
+            },
+            // add more social media platforms as needed
         },
     },
-    events: [
-        {
-            startDate: '2022-01-01',
-            endDate: '2023-12-31',
-            achievement: 'Master of Computer Science',
-            type: 'academic',
-            description: 'Master degree in Computer Science with a focus on AI',
-            entityName: 'MIT',
-        },
-        {
-            startDate: '2024-01-01',
-            endDate: '2025-12-31',
-            achievement: 'Software Development Project',
-            type: 'professional',
-            description: 'Developed an ecommerce platform for a well-known client',
-            entityName: 'XYZ Co.',
-        },
-        // more events...
-    ],
+    formation: events,
 };
